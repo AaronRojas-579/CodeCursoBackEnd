@@ -1,0 +1,3 @@
+DATOS CURIOSOS A TENER EN CUENTA:
+En este caso que estamos utilizando Mongo DB Atlas necesitamos una conexion a internet que no sea publica, por ejemplo internet de la universidad o de cualquier espacio publico, ya que muchas de ellas no permiten la conexion con otros servidores
+
