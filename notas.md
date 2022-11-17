@@ -1,5 +1,5 @@
 ## Cookies
-Es semenjante al localStorage del js
+#### **Galletas** Es semenjante al localStorage del js
 ### Explicacion de los archivos 
 creados 
 <br>

@@ -3,15 +3,16 @@ const app = express()
 //Requerimos Cookie-Parser
 const cookieParser = require("cookie-parser")
 //Middleware
-app.use(cookieParser())
+require("dotenv").config()
+app.use(cookieParser(process.env.SECRET_KEY_COOKIE))
+// 'secreto' o SECRET_KEY_COOKIE es para incriptar las cookies
 app.use(express.json());
 app.use(express.urlencoded({extended:true}))
 app.use(express.static("public"))
-
-
-app.get("/prueba",(req,res)=>{
-    res.send("Hola al Mundo")
-})
+//Importamos las Rutas
+const cookiesRoutes = require('./rutas/rutas')
+//El nombre no necesariamente tiene que ser igula al nombre de la variable que exportamos con mudule.exports a diferencia del type:module
+app.use('/cookies',cookiesRoutes)
 
 //Exportamos la constante app 
 
