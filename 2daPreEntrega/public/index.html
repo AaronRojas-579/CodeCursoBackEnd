@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+    <h2>Chat Global</h2>
+
+    <div id="mostrarCompresion">
+
+    </div>
+    <form id="mensajesForm">
+        Mail : <input type="mail" name="id" id="id" required placeholder="mail">
+        <br>
+        Nombre : <input type="text" name="nombre" id="nombre" required placeholder="Nombre">
+        <br>
+        Apellido : <input type="text" name="apellido" id="apellido" required placeholder="Apellido">
+        <br>
+        Edad : <input type="number" name="edad" id="edad" required placeholder="Edad">
+        <br>
+        Alias : <input type="text" name="alias" id="alias" required placeholder="Alias">
+        <br>
+        Mensaje : <input type="text" name="text" id="text" required placeholder="Mensaje">
+        <br>
+        <button type="submit">Enviar Mensaje</button>
+        <br>
+    </form>
+    <br>
+    <div id="historial">
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/normalizr@3.6.1/dist/normalizr.browser.min.js"></script>
+    <script src="./main.js" ></script>
+</body>
+</html>

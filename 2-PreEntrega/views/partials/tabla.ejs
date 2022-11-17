@@ -1,0 +1,26 @@
+<div>
+    <table>
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Edad</th>
+            <th>Sexo</th>
+        </tr>
+        <%dataPersonas.forEach(per=>{%>
+            <tr>
+                <td><%=per.nombre%></td>
+                <td><%=per.apellido%></td>
+                <td><%=per.edad%></td>
+                <%if(per.sexo == 'Hombre'){%>
+                    <td>
+                        <img style="width: 25px" src="https://cdn3.iconfinder.com/data/icons/business-avatar-1/512/1_avatar-512.png" alt="Mujer"> 
+                    </td>
+                <%}else{%>
+                    <td> 
+                        <img style="width: 25px" src="https://cdn3.iconfinder.com/data/icons/business-avatar-1/512/4_avatar-512.png" alt="Hombre">
+                    </td>
+                <%}%>
+            </tr>
+        <%})%>
+    </table>
+</div>

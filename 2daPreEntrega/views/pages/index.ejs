@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla de productos</title>
+</head>
+<body>
+    <h3>Tabla de 5 Productos aleatorios con Faker</h3>
+    <% if(productosFaker.length !== 0 ){ %>
+        <%- include('../partials/tabla.ejs') %>
+    <%}else{%>
+        <h3>No ha encontrado datos</h3>
+    <%}%>
+    
+</body>
+</html>

@@ -1,0 +1,16 @@
+<table>
+    <h3>Carrito</h3>
+    <tr>
+        <th>Nombre</th>
+        <th>Calidad</th>
+        <th>Precio</th>
+    </tr>
+    <%carrito.forEach(per=>{%>
+        <tr>
+            <td><%=per.nombre%></td>
+            <td><%=per.calidad%></td>
+            <td><%=per.precio%></td>
+            <td><button action="./ecommerce" method="DELETE">eliminar de carrito</button></td>
+        </tr>
+    <%})%>
+</table>

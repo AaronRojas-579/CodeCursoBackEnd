@@ -1,0 +1,19 @@
+<div>
+    <h3>Lista de Productos</h3>
+    <table>
+        <tr>
+            <th>Nombre</th>
+            <th>Calidad</th>
+            <th>Precio</th>
+        </tr>
+        <%productos.forEach(per=>{%>
+            <tr>
+                <td><%=per.nombre%></td>
+                <td><%=per.calidad%></td>
+                <td><%=per.precio%></td>
+                <td><button action="./ecommerce" method="DELETE">eliminar</button></td>
+                <td><button>Agregar al Carrito</button></td>
+            </tr>
+        <%})%>
+    </table>
+</div>
