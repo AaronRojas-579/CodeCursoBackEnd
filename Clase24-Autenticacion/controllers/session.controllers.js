@@ -3,7 +3,10 @@ const users = require('../usuarios')
 const sesionGet = async (req, res) => {
     try {
         req.session.visitas = req.session.visitas ? req.session.visitas + 1 : 1;
-        const user = req.session.username
+        const user = req.user.username
+        //Ahora los datos del usuario estan el req.user, es esa la manera que la guarda passport con la funcion done()
+        console.log(req.session)
+        //y aqui se puede ver que passport guarda los usuarios port el id
         res.render('pages/index.ejs',{user})
 
     } catch (error) {
@@ -14,13 +17,15 @@ const sesionGet = async (req, res) => {
     }
 }
 const sessionLogout = (req, res) => {
-    const user = req.session.username
+    const user = req.user.username
     req.session.destroy(err =>{
         if(err) return res.send(err)
         res.render('pages/logout.ejs',{user})
     })
 }
 
+//Estas funciones que viene ya no las utilizaremos ya que en su lugar utilizaremos las configuraciones que utilizamos con passport
+//......................
 const sessionPostLogin = (req, res) => {
     const { username , password } = req.body
     const user = users.find(e=>e.username == username)
@@ -35,6 +40,7 @@ const sessionPostLogin = (req, res) => {
     req.session.admin = true
     res.redirect("./")
    }
+
 const sessionRegister = (req,res)=>{
     const {username,password} = req.body
     if(username && password){
@@ -49,6 +55,7 @@ const sessionRegister = (req,res)=>{
         res.send('Error al Registrarte')
     }
 }
+//......................
 
 module.exports = { 
     sesionGet ,
