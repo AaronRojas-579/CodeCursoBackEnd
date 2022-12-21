@@ -1,0 +1,61 @@
+[2022-12-14T22:21:17.507] [WARN] archivo - Hola soy el logger archivo 2
+[2022-12-14T22:21:17.508] [ERROR] archivo - Hola soy el logger de todos 
+[2022-12-14T22:21:17.509] [FATAL] archivo - Hola soy el logger de fatal 
+[2022-12-15T00:30:12.230] [TRACE] custom - Hola soy el logger default
+[2022-12-15T00:30:12.232] [DEBUG] custom - Hola soy el logger console
+[2022-12-15T00:30:12.233] [INFO] custom - Hola soy el logger archivo
+[2022-12-15T00:30:12.233] [WARN] custom - Hola soy el logger archivo 2
+[2022-12-15T00:30:12.234] [ERROR] custom - Hola soy el logger de todos 
+[2022-12-15T00:30:12.234] [FATAL] custom - Hola soy el logger de fatal 
+[2022-12-15T00:43:30.239] [TRACE] custom - Hola soy el logger default
+[2022-12-15T00:43:30.242] [DEBUG] custom - Hola soy el logger console
+[2022-12-15T00:43:30.242] [INFO] custom - Hola soy el logger archivo
+[2022-12-15T00:43:30.243] [WARN] custom - Hola soy el logger archivo 2
+[2022-12-15T00:43:30.244] [ERROR] custom - Hola soy el logger de todos 
+[2022-12-15T00:43:30.244] [FATAL] custom - Hola soy el logger de fatal 
+[2022-12-15T00:44:26.031] [TRACE] custom - Hola soy el logger default
+[2022-12-15T00:44:26.034] [DEBUG] custom - Hola soy el logger console
+[2022-12-15T00:44:26.034] [INFO] custom - Hola soy el logger archivo
+[2022-12-15T00:44:26.035] [WARN] custom - Hola soy el logger archivo 2
+[2022-12-15T00:44:26.036] [ERROR] custom - Hola soy el logger de todos 
+[2022-12-15T00:44:26.036] [FATAL] custom - Hola soy el logger de fatal 
+[2022-12-15T00:45:06.403] [TRACE] custom - Hola soy el logger default
+[2022-12-15T00:45:06.406] [DEBUG] custom - Hola soy el logger console
+[2022-12-15T00:45:06.406] [INFO] custom - Hola soy el logger archivo
+[2022-12-15T00:45:06.407] [WARN] custom - Hola soy el logger archivo 2
+[2022-12-15T00:45:06.408] [ERROR] custom - Hola soy el logger de todos 
+[2022-12-15T00:45:06.408] [FATAL] custom - Hola soy el logger de fatal 
+[2022-12-15T00:45:47.968] [TRACE] custom - Hola soy el logger default
+[2022-12-15T00:45:47.971] [DEBUG] custom - Hola soy el logger console
+[2022-12-15T00:45:47.972] [INFO] custom - Hola soy el logger archivo
+[2022-12-15T00:45:47.973] [WARN] custom - Hola soy el logger archivo 2
+[2022-12-15T00:45:47.973] [ERROR] custom - Hola soy el logger de todos 
+[2022-12-15T00:45:47.974] [FATAL] custom - Hola soy el logger de fatal 
+[2022-12-15T00:46:13.264] [TRACE] custom - Hola soy el logger default
+[2022-12-15T00:46:13.267] [DEBUG] custom - Hola soy el logger console
+[2022-12-15T00:46:13.268] [INFO] custom - Hola soy el logger archivo
+[2022-12-15T00:46:13.269] [WARN] custom - Hola soy el logger archivo 2
+[2022-12-15T00:46:13.269] [ERROR] custom - Hola soy el logger de todos 
+[2022-12-15T00:46:13.270] [FATAL] custom - Hola soy el logger de fatal 
+[2022-12-15T00:47:40.465] [ERROR] custom - numero 2 no esta definido
+[2022-12-15T01:00:22.128] [ERROR] produccion - numero 2 no esta definido
+[2022-12-15T01:01:08.567] [ERROR] produccion - numero 2 no esta definido
+[2022-12-15T01:01:20.345] [ERROR] produccion - numero 2 no esta definido
+{"level":"warn","message":"127.0.0.1 - log warn"}
+{"level":"error","message":"127.0.0.1 - log error"}
+{"level":"warn","message":"127.0.0.1 - log warn 2"}
+{"level":"error","message":"127.0.0.1 - log error 2"}
+{"level":30,"time":1671078896796,"pid":15960,"hostname":"DESKTOP-UJ54UN0","msg":"Pino Info"}
+{"level":50,"time":1671078896796,"pid":15960,"hostname":"DESKTOP-UJ54UN0","msg":"Pino Error"}
+{"level":30,"time":1671079133701,"pid":7484,"hostname":"DESKTOP-UJ54UN0","msg":"Pino Info"}
+{"level":50,"time":1671079133701,"pid":7484,"hostname":"DESKTOP-UJ54UN0","msg":"Pino Error"}
+{"level":30,"time":1671079133701,"pid":7484,"hostname":"DESKTOP-UJ54UN0","a":"en el primer parametro puede recibir objetos y pino los pasa a formato json","msg":"Pino Info"}
+{"level":30,"time":1671079268651,"pid":15692,"hostname":"DESKTOP-UJ54UN0","msg":"Pino Info"}
+{"level":50,"time":1671079268652,"pid":15692,"hostname":"DESKTOP-UJ54UN0","msg":"Pino Error"}
+{"level":30,"time":1671079268652,"pid":15692,"hostname":"DESKTOP-UJ54UN0","a":"en el primer parametro puede recibir objetos y pino los pasa a formato json","msg":"Pino Info"}
+{"level":30,"time":1671079268652,"pid":15692,"hostname":"DESKTOP-UJ54UN0","msg":"La respuesta es 11"}
+{"level":30,"time":1671079355503,"pid":6184,"hostname":"DESKTOP-UJ54UN0","msg":"Pino Info"}
+{"level":50,"time":1671079355503,"pid":6184,"hostname":"DESKTOP-UJ54UN0","msg":"Pino Error"}
+{"level":30,"time":1671079355503,"pid":6184,"hostname":"DESKTOP-UJ54UN0","a":"en el primer parametro puede recibir objetos y pino los pasa a formato json","msg":"Pino Info"}
+{"level":30,"time":1671079355503,"pid":6184,"hostname":"DESKTOP-UJ54UN0","msg":"La respuesta es 11"}
+{"level":30,"time":1671079355504,"pid":6184,"hostname":"DESKTOP-UJ54UN0","a":"mensaje hijo","msg":"este mensaje esta anidado con su hijo"}
